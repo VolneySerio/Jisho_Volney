@@ -1,3 +1,48 @@
+# Jisho Volney
+
+O projeto foi feito para aprimorar as habilidades na cadeira de autoração multimídia 2 e consolidar os conhecimentos que serão testados em projeto integrado.
+# Próximos Passos para o Jisho Volney
+
+---
+
+## 1. **Refazer a interface**
+   - Mudar a interface.
+
+---
+## 2. **Implementar o i18next**
+   - Ferramentas de tradução
+
+---
+## 2. **Suporte a 日本語**
+   - Ferramentas de tradução
+
+---
+## 4. **Exportar em JSON**
+   - Exportar em JSON com definição. 
+
+---
+## 5. **Exportar em PDF**
+   - Exportar em PDF com espaços de questão. 
+
+---
+## 6. **Gerar imagem pelo texto**
+   - Gerar uma imagem. 
+
+---
+## Tecnologias
+
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
