@@ -29,6 +29,11 @@ O projeto foi feito para aprimorar as habilidades na cadeira de autoração mult
    - Gerar uma imagem. 
 
 ---
+## 7. **Refazer o projeto em typescript**
+   - Exportar em PDF com espaços de questão. 
+
+---
+
 ## Tecnologias
 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
