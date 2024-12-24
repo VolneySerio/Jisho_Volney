@@ -43,7 +43,7 @@ function App() {
 
   return (
     <main className="App">
-      <h1>Dictionary</h1>
+      <h1>日本語</h1>
       <div className="searchBox">
         <input
           type="text"

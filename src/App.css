@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,800;1,300&display=swap");
-
+:root{
+  --cor-pri: #0B8494;
+  --cor-sec: #0B8494;
+}
 .App {
   height: 100vh;
   width: 100vw;
