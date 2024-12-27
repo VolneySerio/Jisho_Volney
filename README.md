@@ -25,6 +25,13 @@ O projeto foi feito para aprimorar as habilidades na cadeira de autoração mult
 ⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠻⠿⠿⠿⠿⠛⠉
 
+
+
+
+
+
+
+
 ---
 ## 2. **Implementar o i18next**
    - Ferramentas de tradução
