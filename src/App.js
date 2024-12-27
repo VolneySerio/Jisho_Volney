@@ -1,13 +1,14 @@
-import { React, useState } from "react";
+import React, { useState } from "react";
 import Axios from "axios";
 import "./App.css";
 import { FaSearch } from "react-icons/fa";
 import { FcSpeaker } from "react-icons/fc";
+import { DownloadPdfButton } from "./doc";
 
 function App() {
   const [data, setData] = useState("");
   const [searchWord, setSearchWord] = useState("");
-  const [searchedWords, setSearchedWord] = useState([]);
+  const [searchedWords, setSearchedWords] = useState([]);
 
   function getMeaning() {
     Axios.get(
@@ -16,7 +17,7 @@ function App() {
       setData(response.data[0]);
 
       if (searchWord.trim() && !searchedWords.includes(searchWord.trim())) {
-        setSearchedWord([...searchedWords, searchWord.trim()]);
+        setSearchedWords([...searchedWords, searchWord.trim()]);
       }
     });
   }
@@ -30,7 +31,7 @@ function App() {
     }
   }
 
-  function exportWords() {
+  function exportToTxt() {
     const fileContent = searchedWords.join("\n");
     const blob = new Blob([fileContent], { type: "text/plain" });
     const url = URL.createObjectURL(blob);
@@ -60,8 +61,9 @@ function App() {
           <FaSearch size="20px" />
         </button>
       </div>
+      <div className="batata">
       {data && (
-        <div className="showResults">
+        <section className="showResults">
           <h2>
             {data.word}{" "}
             <button
@@ -73,12 +75,12 @@ function App() {
             </button>
           </h2>
           <h4>Parts of speech:</h4>
-          <p className="som">{data.meanings[0].partOfSpeech}</p>
+          <p className="som">- {data.meanings[0].partOfSpeech}</p>
           <h4>Definition:</h4>
-          <p className="defi">{data.meanings[0].definitions[0].definition}</p>
+          <p className="defi">- {data.meanings[0].definitions[0].definition}</p>
           <h4>Example:</h4>
-          <p className="exemplo">{data.meanings[0].definitions[0].example}</p>
-        </div>
+          <p className="exemplo">- {data.meanings[0].definitions[0].example}</p>
+        </section>
       )}
       {searchedWords.length > 0 && (
         <div className="exportSection">
@@ -88,11 +90,21 @@ function App() {
               <li key={index}>{word}</li>
             ))}
           </ul>
-          <button onClick={exportWords} className="exportb">
-            Export Searched Words
-          </button>
+          <div className="exportButtons">
+            <button onClick={exportToTxt} className="exportTxt">
+              TXT
+            </button>
+            <DownloadPdfButton className="exportPDF"
+              title="Searched Words"
+              words={searchedWords}
+            />
+          </div>
         </div>
       )}
+      </div>
+      <footer>
+        
+      </footer>
     </main>
   );
 }
