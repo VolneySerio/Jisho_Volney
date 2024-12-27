@@ -85,6 +85,7 @@ O projeto foi feito para aprimorar as habilidades na cadeira de autoração mult
 ---
 ## 2. **Suporte a 日本語**
    - Ferramentas de tradução
+   - Opção para puxar de outra API 
 
 ---
 ## 4. **Exportar em JSON**
@@ -92,7 +93,8 @@ O projeto foi feito para aprimorar as habilidades na cadeira de autoração mult
 
 ---
 ## 5. **Exportar em PDF**
-   - Exportar em PDF com espaços de questão. 
+   - Exportar em PDF com espaços de questão.
+   - Customizar o PDF 
 
 ---
 ## 6. **Gerar imagem pelo texto**
